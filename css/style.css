@@ -9,27 +9,43 @@ body{
 }
 header{
   background-color: #292626;
+  overflow: hidden;
+  padding: 20px 10px;
 }
-#header-img{
-    position:absolute;
-    top:20px;
-    left:20px;
-    overflow:hidden;
-    display: block;
-    width: 150px;
-    max-width: 100%;
-    height: auto;
+
+ul{
+  float: right;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
-#nav-bar{
-    text-align: right;
-    padding: 20px;
-}
-#nav-bar li {
-    display: inline-block;
-    margin: 0 8px;
-    padding-top: 1px;
+li{
+  display: inline;
+  margin-right: 10px;
 }
 a{
   text-decoration: none;
   color: white;
+}
+#header-img{
+  width: 200px;
+}
+#nosotros{
+  background-color: #b81f1f;
+  padding: 50px;
+  height: auto;
+}
+#nosotros h1{
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+}
+article{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+}
+article p{
+  margin: 50px;
+  line-height: 1.6;
 }
