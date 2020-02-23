@@ -1,59 +1,116 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* Importing Google Fonts for the project*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+/*Defining some general parameters*/
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6;
+	text-align: center;
+	font-size: 16px;
 }
 
-header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  width: 100%;
+/*Setting the header to Flexbox for simplicity and adding background color*/
+/*PENDING: 
+	- Make sticky.
+*/
+header{
+	display: flex;
+	justify-content: center;
+	padding: 1.6rem;
+	background-color:rgba(46, 46, 46, 0.2);
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
-header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#nav-bar {
-  float: right;
-  margin-top: 5px;
-  margin-right: 50px;
-}
-
+/* Pushing the image to the left side of the header*/
 #header-img {
-  width: 140px;
+	margin-right: auto;
+	width: 11.25rem;
 }
 
+/*Moving the nav bar from the page border and adding some padding to spacing inner elements*/
+#nav-bar {
+	margin-right: 3.75rem;
+	padding: 1.25rem;
+}
+
+/*Spacing the elements, removing the underline and changing the color*/
+#nav-bar a{
+	margin-right: 1.25rem;
+	text-decoration: none;
+	color: white;
+	padding: 1.6rem;
+}
+
+#nav-bar a:hover{
+	background-color: black;
+	opacity: 0.5;
+}
 
 #about {
-  text-align: center;
-  background-image: url(https://images.pexels.com/photos/633198/pexels-photo-633198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  padding: 20px;
+	background-image: url(https://images.pexels.com/photos/916015/pexels-photo-916015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 120px;
+	height: 100vh;
 }
 
-h1 {
-  font-size: 38px;
+h1{
+	margin: auto;
+	font-size: 48px;
+	font-weight: bold;
 }
+
 #video {
-  margin-top: 20px;
-  box-shadow: 2px 5px 20px black;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	box-shadow: 5px 10px 10px grey;
+}
+
+#flex-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 40px;
+}
+
+.flex-item {
+	width: 100px;
+}
+
+#services{
+	padding: 50px;
+	background-color: #e6e6e6;
+}
+#services-flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.container {
+	display: inline-block;
+	text-align: center;
+	border: 2px black solid;
+	border-radius: 10px;
+	padding: 50px;
+	margin-right: 20px;
+}
+.icon {
+	width: 50px;
+}
+
+#contact {
+	background-image: url(https://images.pexels.com/photos/3558637/pexels-photo-3558637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	height: 100%;
+	padding: 50px;
+}
+
+#contact-form{
+	display: inline-block;
+	background-color:rgba(46, 46, 46, 0.2) ;
+	border-radius: 20px;
+	margin-top: 100px;
+	padding: 100px;
 }
