@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing One Page</title>
-</head>
-<body>
-  <header id="header">
-    <img src="https://res.cloudinary.com/dkzu3b5up/image/upload/v1582245359/loguito_1_reg8a3.png" alt="Corp Logo" id="header-img">
-    <nav id="nav-bar">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#" class="nav-link"></a>
-      <a href="#" class="nav-link"></a>
-    </nav>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing One Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="https://res.cloudinary.com/dkzu3b5up/image/upload/v1582245359/loguito_1_reg8a3.png" alt="Corp Logo" id="header-img">
+      <nav id="nav-bar">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+    </header>
     <section id="about">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/N-2-nHwcwP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/N-2-nHwcwP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
-  </header>
-</body>
+    <section id="services">
+
+    </section>
+    <section id="contact">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <input type="submit" value="Send" id="submit">
+      </form>
+    </section>
+
+
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      } 
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
